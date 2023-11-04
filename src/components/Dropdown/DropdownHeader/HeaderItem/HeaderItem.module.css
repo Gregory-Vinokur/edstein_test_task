@@ -1,0 +1,14 @@
+.HeaderItem {
+  display: flex;
+  height: 2.4rem;
+  padding: 6px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  background: var(--gray100-primary);
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2rem;
+}

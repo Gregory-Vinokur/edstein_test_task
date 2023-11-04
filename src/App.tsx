@@ -1,5 +1,11 @@
+import { Dropdown } from './components';
+
 function App() {
-  return <div>DropDown</div>;
+  return (
+    <main>
+      <Dropdown />
+    </main>
+  );
 }
 
 export default App;

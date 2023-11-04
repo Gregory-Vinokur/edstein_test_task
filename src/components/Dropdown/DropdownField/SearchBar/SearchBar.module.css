@@ -1,0 +1,26 @@
+.SearchBar {
+  display: flex;
+  gap: 8px;
+  height: 4rem;
+  width: 36.8rem;
+  padding: 1.2rem 0 1rem 1rem;
+  align-items: center;
+  border-radius: 10px;
+  background: var(--gray100-primary);
+  margin: 1.6rem 1.6rem 0 1.6rem;
+}
+
+.searchInput {
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+.searchInput::placeholder {
+  color: var(--gray300-primary);
+}
