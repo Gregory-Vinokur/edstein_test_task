@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import DropdownContext from './DropdownContext';
 import { Lang, LangKey } from '../types';
-import { languages } from './../components/Dropdown/DropdownField/DropdownField.service';
+import { languages } from '../constants';
 
 const DropdownProvider = ({ children }: { children: React.ReactNode }) => {
   const [isOpen, setIsOpen] = useState(false);

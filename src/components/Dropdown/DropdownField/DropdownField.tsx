@@ -1,5 +1,5 @@
 import styles from './DropdownField.module.css';
-import { languagesIcons } from './DropdownField.service';
+import { languagesIcons } from '../../../constants';
 import { LangKey } from '../../../types';
 import { SearchBar } from './SearchBar';
 import { SelectItem } from './SelectItem';

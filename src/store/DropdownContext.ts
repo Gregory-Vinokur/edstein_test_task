@@ -1,6 +1,6 @@
 import { createContext } from "react";
 import { IDropdownContext } from "./DropdownContext.types";
-import { languages } from "../components/Dropdown/DropdownField/DropdownField.service";
+import { languages } from "../constants";
 
 const DropdownContext = createContext<IDropdownContext>({
   isOpen: false,
