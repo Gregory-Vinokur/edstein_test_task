@@ -14,8 +14,9 @@ const SearchBar = () => {
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const text = e.target.value;
-    setSearchText(text);
-    onSearch(text);
+    const onlyLettersText = text.replace(/[^A-Za-zА-Яа-я]/g, '');
+    setSearchText(onlyLettersText);
+    onSearch(onlyLettersText);
   };
 
   return (
