@@ -1,3 +1,5 @@
+import { Lang } from "../../../../types";
+
 export type HeaderItemProps = {
-  text: string;
+  text: Lang;
 };

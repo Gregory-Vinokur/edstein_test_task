@@ -1,6 +1,9 @@
+import { useDropdown } from '../../../store';
 import styles from './Options.module.css';
 
 const Options = () => {
+  const { onToggleIcons, onToggleMultiselect, showIcons, multiselectEnabled } =
+    useDropdown();
   return (
     <div className={styles.Options}>
       <span className={styles.optionsTitle}>Опции:</span>
@@ -10,6 +13,8 @@ const Options = () => {
         type="checkbox"
         id="multiselect"
         name="mode"
+        onChange={onToggleMultiselect}
+        checked={multiselectEnabled}
       />
       <label htmlFor="icons">Иконки</label>
       <input
@@ -17,6 +22,8 @@ const Options = () => {
         type="checkbox"
         id="icons"
         name="mode"
+        onChange={onToggleIcons}
+        checked={showIcons}
       />
     </div>
   );

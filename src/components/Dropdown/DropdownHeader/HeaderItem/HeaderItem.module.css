@@ -12,3 +12,11 @@
   font-weight: 500;
   line-height: 1.2rem;
 }
+
+.CloseIcon {
+  cursor: pointer;
+}
+
+.CloseIcon:hover {
+  scale: 1.1;
+}

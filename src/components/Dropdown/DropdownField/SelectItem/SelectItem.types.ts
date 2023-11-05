@@ -1,4 +1,4 @@
-import { Icon, Lang } from "../DropdownField.types";
+import { Icon, Lang } from "../../../../types";
 
 export type SelectItemProps = {
   icon: Icon;

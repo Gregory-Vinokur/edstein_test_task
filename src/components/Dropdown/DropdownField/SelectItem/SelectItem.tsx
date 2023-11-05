@@ -1,10 +1,13 @@
+import { useDropdown } from '../../../../store';
 import styles from './SelectItem.module.css';
 import { SelectItemProps } from './SelectItem.types';
 
 const SelectItem = ({ icon, language }: SelectItemProps) => {
+  const { handleCheckboxChange, selectedLanguages, showIcons } = useDropdown();
+
   return (
     <div className={styles.SelectItem}>
-      {icon({})}
+      {showIcons && icon({})}
       <div className={styles.checkboxWrapper}>
         <p className={styles.checkboxText}>{language}</p>
         <div className={styles.checkbox}>
@@ -13,6 +16,8 @@ const SelectItem = ({ icon, language }: SelectItemProps) => {
             hidden
             type="checkbox"
             id={language}
+            onChange={() => handleCheckboxChange(language)}
+            checked={selectedLanguages.includes(language)}
           />
           <label className={styles.checkboxLabel} htmlFor={language}></label>
         </div>

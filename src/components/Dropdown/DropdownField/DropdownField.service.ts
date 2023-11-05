@@ -4,7 +4,7 @@ import Esp from '../../../assets/espIcon.svg?react';
 import Ger from '../../../assets/gerIcon.svg?react';
 import Ita from '../../../assets/itaIcon.svg?react';
 import Pol from '../../../assets/polIcon.svg?react';
-import { Icon, Lang, LangKey } from './DropdownField.types';
+import { Icon, Lang, LangKey } from '../../../types';
 
 export const languages: Record<LangKey, Lang> = {
   ru: 'Русский',
